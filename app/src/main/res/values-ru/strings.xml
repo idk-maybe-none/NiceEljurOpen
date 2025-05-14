@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diary">Дневник</string>
+    <string name="marks">Оценки</string>
+    <string name="homework">Домашка</string>
+    <string name="messages">Письма</string>
+    <string name="more">Ещё</string>
+    <string name="final_grades">Итоговые оценки</string>
+    <string name="about_us">О нас</string>
+    <string name="announcements">Объявления</string>
+    <string name="settings">Настройки</string>
+    <string name="rating">Рейтинг</string>
+</resources>
