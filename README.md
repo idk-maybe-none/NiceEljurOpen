@@ -5,8 +5,9 @@
 ## Возможности
 
 <div style="display: flex; flex-wrap: wrap;">
-    <img src="screenshots/screenshot1.jpg" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px;"/>
-    <img src="screenshots/screenshot2.jpg" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px; margin-left: 10px"/>
+    <img src="screenshots/diary.png" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px;"/>
+    <img src="screenshots/messages.png" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px; margin-left: 10px"/>
+    <img src="screenshots/calculator.png" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px; margin-left: 10px"/>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
