@@ -9,11 +9,10 @@
     <img src="screenshots/messages.png" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px; margin-left: 10px"/>
     <img src="screenshots/calculator.png" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px; margin-left: 10px"/>
 </div>
-
 <div style="display: flex; flex-wrap: wrap;">
     <img src="screenshots/marks_by_date.png" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px;"/>
     <img src="screenshots/marks_by_subject.png" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px; margin-left: 10px"/>
-    <img src="screenshots/screenshot4.jpg" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px; margin-left: 10px"/>
+    <img src="screenshots/announcements.png" alt="drawing" style="width: 30%; height: auto; margin-bottom: 10px; margin-left: 10px"/>
 </div>
 
 ### 📅 Умное расписание
