@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Build & Notify
+    name: Build & Upload Artifacts
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -20,21 +20,22 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace
+      - name: Build Debug & Release APKs
+        run: ./gradlew assembleDebug assembleRelease --stacktrace
 
-#      - name: Build Release APK
-#        run: ./gradlew assembleRelease --stacktrace
+      - name: Upload Debug APK artifact
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
 
-      - name: Telegram Success
-        if: ${{ success() && github.ref == 'refs/heads/main' }}
-        run: |
-          # набор случайных фраз
-          messages=(
-            "Вечерок в хату, тут обнова подъехала"
-            "Сборка взлетела, как ракета в космос"
-            "CI миновал бурю и доставил APK целым"
-            "Обновление на районе — качаем, не тормозим"
+      - name: Upload Release APK artifact
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: app/build/outputs/apk/release/*.apk            "Обновление на районе — качаем, не тормозим"
             "Релиз готов, баги сдаём без потерь"
             "Апдейт прошёл, как по маслу"
             "Код в продакшен отправлен — праздник удался"
